@@ -1,0 +1,27 @@
+{
+    "idHall": 0,
+    "nameHall": "Prueba",
+    "actualizationTime": "16/03/2025 10:42:45 p. m.",
+    "marks": [
+        {
+            "idMark": 2,
+            "name": "Mark A",
+            "lastUpdateDate": "16/03/2025 5:00:00 p. m.",
+            "status": true,
+            "initialized": true,
+            "textMediaEntries": [
+                {
+                    "type": 1,
+                    "fileUrl": "localMedia/0/2/Ratsss.jpg",
+                    "showText": "Sapo"
+                },
+                {
+                    "type": 0,
+                    "fileUrl": "localMedia/0/2/sapo.jpg",
+                    "showText": "Sapo"
+                }
+            ],
+            "type": 0
+        }
+    ]
+}
