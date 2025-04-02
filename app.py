@@ -2,9 +2,7 @@ from flask import Flask
 from flask_smorest import Api
 import logging
 
-import models
-
-from resources.main import blp as MainBlueprint
+from resources.dedicated import blp as MainBlueprint
 
 
 def create_app(db_url = None):
@@ -13,7 +11,7 @@ def create_app(db_url = None):
     logging.basicConfig(level=logging.INFO)
     app.logger.setLevel(logging.INFO)
 
-    app.logger.info("🚀 Iniciando la aplicación Flask...")
+    app.logger.info("Iniciando la aplicación Flask...")
 
     app.config["PROPAGATE_EXCEPTIONS"] = True
     app.config["API_TITLE"] = "ILCE REST API"
@@ -30,6 +28,6 @@ def create_app(db_url = None):
 
     api.register_blueprint(MainBlueprint)
 
-    app.logger.info("✅ Flask API lista para recibir peticiones.")
+    app.logger.info("Flask API lista para recibir peticiones.")
 
     return app
