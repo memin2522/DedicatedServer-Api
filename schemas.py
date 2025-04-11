@@ -4,7 +4,7 @@ import enum
 
 #User Schemas
 class ServerSchema(Schema):
-    posX = fields.Int(required=True)
-    posY = fields.Int(required=True)
-    posZ = fields.Int(required=True)
+    posX = fields.Float(required=True)
+    posY = fields.Float(required=True)
+    posZ = fields.Float(required=True)
 
